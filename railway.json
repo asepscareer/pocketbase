@@ -5,16 +5,12 @@
     },
     "deploy": {
         "startCommand": null,
-        "healthcheckPath": "/",
-        "healthcheckTimeout": 120,
         "restartPolicyType": "ALWAYS"
     },
     "environments": {
         "production": {
             "deploy": {
-                "restartPolicyType": "ALWAYS",
-                "healthcheckPath": "/",
-                "healthcheckTimeout": 180
+                "restartPolicyType": "ALWAYS"
             }
         }
     }
