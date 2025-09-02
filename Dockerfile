@@ -87,9 +87,5 @@ org.opencontainers.image.source="https://github.com/pocketbase/pocketbase" \
 org.opencontainers.image.licenses="MIT"
 
 
-# Persist data (hint for platforms; on Railway attach a Volume to this path)
-VOLUME ["/srv/pb/pb_data"]
-
-
 # Use tini, then our entrypoint (binds to $PORT)
 ENTRYPOINT ["/sbin/tini", "--", "/usr/local/bin/entrypoint.sh"]
