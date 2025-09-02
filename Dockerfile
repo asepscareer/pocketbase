@@ -87,5 +87,6 @@ org.opencontainers.image.source="https://github.com/pocketbase/pocketbase" \
 org.opencontainers.image.licenses="MIT"
 
 
+
 # Use tini, then our entrypoint (binds to $PORT)
 ENTRYPOINT ["/sbin/tini", "--", "/usr/local/bin/entrypoint.sh"]
