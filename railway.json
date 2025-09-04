@@ -8,9 +8,7 @@
   "environments": {
     "production": {
       "deploy": {
-        "restartPolicyType": "ALWAYS",
-        "healthcheckPath": "/_/",
-        "healthcheckTimeout": 180
+        "restartPolicyType": "ALWAYS"
       }
     }
   }
