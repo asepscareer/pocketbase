@@ -1,21 +1,17 @@
 {
-    "$schema": "https://railway.com/railway.schema.json",
-    "build": {
-        "builder": "DOCKERFILE"
-    },
-    "deploy": {
-        "startCommand": null,
+  "$schema": "https://railway.com/railway.schema.json",
+  "build": { "builder": "DOCKERFILE" },
+  "deploy": {
+    "startCommand": null,
+    "restartPolicyType": "ALWAYS"
+  },
+  "environments": {
+    "production": {
+      "deploy": {
+        "restartPolicyType": "ALWAYS",
         "healthcheckPath": "/_/",
-        "healthcheckTimeout": 120,
-        "restartPolicyType": "ALWAYS"
-    },
-    "environments": {
-        "production": {
-            "deploy": {
-                "restartPolicyType": "ALWAYS",
-                "healthcheckPath": "/_/",
-                "healthcheckTimeout": 180
-            }
-        }
+        "healthcheckTimeout": 180
+      }
     }
+  }
 }
